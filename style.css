@@ -24,7 +24,7 @@ body {
     color: #fff;
     font-size: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    content: 'Like Me';
+    content: 'Love You';
     position: absolute;
     top: 50%;
     left: 50%;
@@ -34,6 +34,7 @@ body {
 }
 
 .btn:hover::before {
+    content: '';
     top: -30px;
     color: #472547bd;
     font-size: bold;
@@ -41,7 +42,7 @@ body {
 
 .btn::after{
     font-family: 'Ionicons';
-    content: '\f199';
+    content: '';
     color: #983333;
     position: absolute;
     top: 140%;
@@ -53,4 +54,5 @@ body {
 
 .btn:hover::after{
     top: 50%;
+    content: '\f199';
 }
