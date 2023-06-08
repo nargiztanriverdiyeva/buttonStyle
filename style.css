@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #b8b6;
+}
+
+.btn {
+    background: #472547bd;
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:before {
+    color: #fff;
+    font-size: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    content: 'Like Me';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+.btn:hover::before {
+    top: -30px;
+    color: #472547bd;
+    font-size: bold;
+}
+
+.btn::after{
+    font-family: 'Ionicons';
+    content: '\f199';
+    color: #983333;
+    position: absolute;
+    top: 140%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: xx-large;    
+    transition: all 0.5s;
+}
+
+.btn:hover::after{
+    top: 50%;
+}
